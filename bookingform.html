@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rule</title>
+    <style>
+         body{
+            background: linear-gradient(
+                rgb(255, 192, 245),rgb(195, 255, 255),rgb(255, 255, 163),rgb(255, 221, 159), rgb(247, 173, 247)
+            );
+        }
+        p{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(112, 112, 112);
+        }
+        h1,h2{
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: rgb(112, 112, 112);
+        } 
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        table{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(112, 112, 112);
+
+        }
+        form{  font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(112, 112, 112);}
+    </style>
+</head>
+<body><center>
+ 
+ 
+ 
+    <H2>Registration Form</H2>
+    name
+    <input type="text" required id="name " placeholder="enter your name ">
+    <br>
+    <br>
+    pasword
+    <input type="password" required>
+    <br>
+    <br>
+    email
+    <input type="email" required>
+    <br>
+    <br>
+    phone NO.
+    <input type="number"required >
+    <br>
+    <br>
+   check-in date
+    <input type="datetime-local" required>
+    <br>
+    <br>
+    check-out date
+    <input type="datetime-local" required>
+    <br>
+    <br>
+    amount of people
+    <input type="text" required id="name " placeholder="adults:,children:, NO PETS ">
+    <br>
+    <br>
+   <img src="https://conceptodefinicion.de/wp-content/uploads/2017/08/Captcha.jpg" height="30px" width="40px">
+   <br><br>
+   <input id="sunidhi" type="text">
+    <br><br>
+    <p id="validate"></p>
+    <button onclick="validation()"> validate</button>
+   
+        </form>
+ 
+ 
+    </center>
+<script>
+    function validation(){
+    let ac="qGphJD"
+    let uc=document.getElementById("sunidhi").value;
+    if(ac==uc){
+        document.getElementById("validate").innerText= "validation is a success"
+    }
+    else{
+        document.getElementById("validate").innerText="invalid captcha"
+    }}
+</script>
+</body>
+
+
+</html>
